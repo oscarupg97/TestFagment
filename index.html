@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Cortes de Carne</title>
 </head>
 <body>
@@ -15,13 +16,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#top" style="color: black;">Sobre nostros</a>
+              <a class="nav-link" href="#about" style="color: black;">Sobre nostros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: black;">Top 5</a>
+              <a class="nav-link" href="#top" style="color: black;">Top 5</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: black;">About meat</a>
+                <a class="nav-link" href="#meat" style="color: black;">About meat</a>
               </li>
           </ul>
         </div>
@@ -29,6 +30,9 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h3>Top 5 de los mejores cortes de carne</h3>
+            </div>
             <img src="img/carousel/carne1.jpg"class="d-block w-100"
             style="height: 500px;">
           </div>
@@ -40,8 +44,9 @@
           </div>
         </div>
       </div>
+      <!--Inicio Container Nosotros-->
       <div class="container-fluid p-5">
-        <h1 style="text-align: center;">Sobre nosotros</h1>
+        <h1 style="text-align: center;" id="about">Sobre nosotros</h1>
         <br>
           <div class="row">
               <div class="col-sm-6">
@@ -49,10 +54,15 @@
                 <br>
               </div>
               <div class="col-sm-6">
-                <h4 style="text-align: center;">Somo un blog acerca de informar los cortes de carne más pedidos y las características de cada uno, para que no te engañen al pedirlos, ya sea en un restaurante o mercado</h4>
+                <h4 style="text-align: justify;">Somo un blog acerca de informar los cortes de carne más pedidos y las características de cada uno, para que no te engañen al pedirlos, ya sea en un restaurante o mercado.</h4>
+                <br>
+                <p>Antes que nada hay que determinar que la calidad de los cortes se clasifica en tres rubros: Prime, Choice y Select, estadíos que se basan en la cantidad de marmoleo que contienen, es decir, la grasa intramuscular en el corte, el cual es el principal factor que contribuye a la jugosidad, suavidad y sabor de la carne.</p>
+
             </div>
           </div>
       </div>
+      <!--Fin Container Nosotros-->
+      <!--Inicio container top 5-->
       <div class="container-fluid p-5" style="background-color: black;">
 <h1  id="top" style="color: white; text-align: center;">Los 5 mejores cortes de carne</h1>
 <br>
@@ -62,7 +72,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Rib Eye</h5>
-              <img class="card-img-top" src="img/cards/ribeye.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/cards/ribeye.jpg" alt="Card image cap" id="zoom">
               <p class="card-text">Es un filete de la costilla de res blanda al paladar con un poco más de grasa que la mayoría, eso es lo que lo caracteriza al resto de los cortes, gracias a estas cualidades, logra un sabor muy particular y pueda tener una apariencia exterior dorada. También, tiene un poco de hueso.</p>
             </div>
           </div>
@@ -71,7 +81,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">New York Steak</h5>
-              <img class="card-img-top" src="img/cards/newyork.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/cards/newyork.jpg" alt="Card image cap" id="zoom">
               <p class="card-text">Similar al Rib Eye, pero con marmoleo medio y textura firme, ligeramente magro, sin hueso y que lo mismo puede prepararse a la parrilla que al carbón o al horno. Se recomienda cocinar en un término 3/4 para que no pierda su jugo.</p>
             </div>
           </div>
@@ -80,7 +90,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">T-Bone</h5>
-                <img class="card-img-top" src="img/cards/tbone.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/cards/tbone.jpg" alt="Card image cap" id="zoom">
                 <p class="card-text">Como su nombre lo dice, este corte posee lomo y filete separado por un hueso en forma de ‘T’. Posee marmoleo ligero y es muy suave. La recomendación es que sean cortes de 3/4 de pulgada en adelante y en término de 3/4 para conservar su frescura.</p>
               </div>
             </div>
@@ -91,7 +101,7 @@
             <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Arrachera </h5>
-                  <img class="card-img-top" src="img/cards/arrachera.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/cards/arrachera.jpg" alt="Card image cap" id="zoom">
                   <p class="card-text">Es muy suave y con poca grasa. Por lo general se consume a la parrilla y por su gran sabor tiene gran demanda en el mercado. Se trata de una faja de carne larga y gruesa que puede ser marinada. Se cocina regularmente al carbón o a la parrilla.</p>
                 </div>
               </div>
@@ -100,7 +110,7 @@
             <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Churrasco</h5>
-                  <img class="card-img-top" src="img/cards/churrasco.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/cards/churrasco.jpg" alt="Card image cap" id="zoom">
                   <p class="card-text">Corte muy limpio, sin grasa, sin nervios, poca cantidad de marmoleo y sin hueso, proviene de la parte superior del lomo a la altura del aguayón. Es un corte fino, de forma ovalada y es de grandes dimensiones en comparación de los demás debido a que se moldea la pieza con película plástica para su congelación.</p>
                 </div>
               </div>
@@ -108,30 +118,39 @@
       </div>
   </div>
       </div>
+      <!--Fin container top 5-->
+      <!-- Inicio Container About meat -->
       <div class="container-fluid p-5">
-          <h1 style="text-align: center;">About meat</h1>
+          <h1 style="text-align: center;" id="meat">About meat</h1>
           <br>
           <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <h2>¿De donde salen los cortes mencionados?</h2>
                     <h2>Rib Eye</h2>
+                    <h5>El ojo de costilla (también conocido con el nombre en inglés rib eye o ribeye) es un filete extraído de la sección de la costilla de ternera, entre las costillas seis y la doce.</h5>
                     <h2>New York Steak</h2>
-                    <h2></h2>
-                    <h2></h2>
+                    <h5>Es un corte que posee marmoleo medio y textura firme. Ligeramente magro (que no tiene grasa) y que no tiene hueso. Este proviene de la parte media del lomo excluyendo el hueso y de un músculo que no trabaja mucho, por ello su particularidad principal es ser carne tierna.</h5>
+                    <h2>T-Bone</h2>
+                    <h5>El T-bone se extrae de la parte baja del lomo de la vaca, lo que permite que este corte tenga por un lado carne del lomo y por el otro carne de filete o solomillo, la cual, es una carne que se encuentra en la zona lumbar entre el costillar inferior y las columna.</h5>
+                    <h2>Arrachera</h2>
+                    <h5>La arrachera es el nombre que se le da en México a un corte particular de carne de res que proviene del diafragma del animal,​ un músculo que separa la cavidad torácica de la cavidad abdominal.</h5>
+                    <h2>Churrasco</h2>
+                    <h5>El churrasco es un trozo de carne de vacuno, generalmente delgado, cocido sobre una plancha, a las brasas o directamente sobre las llamas. De origen ibérico, el churrasco aparece ya citado en documentos del siglo XV,​ traspasado al nuevo mundo como una forma de preparación de la carne muy común en toda Argentina.</h5>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 p-5">
                     <img src="img/items/cortes.png" style="height: 100%; width: 100%;">
                 </div>
             </div>
           </div>
       </div>
-      <!-- Footer -->
+      <!-- Fin Container About meat -->
+      <!-- Inicio Footer -->
 <footer class="page-footer font-small pt-2" style="background-color: black;">  
     <div class="footer-copyright text-center py-3" style="color: white;">Hecho con amor y cafeina by Oscar Uriel Perez Gomez
     </div>
   </footer>
-  <!-- Footer -->
+  <!-- Fin Footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
